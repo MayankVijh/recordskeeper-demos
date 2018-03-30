@@ -91,7 +91,7 @@ h2{
 #footer ul {
     overflow: hidden;
     list-style: none;
-    margin-right: -20px;
+    margin-right: 0px;
     padding: 0;
 }
 #footer ul li {
@@ -257,7 +257,7 @@ button.btn.btn-default.createWalBtn {
     font-size: 12px;
     margin-top: 140px;
     text-align: center;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     /*margin-top: 140px;*/

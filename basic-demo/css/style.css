@@ -627,3 +627,13 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
 }
 
 }
+
+
+
+
+
+/*for FIrefox*/
+
+@-moz-document url-prefix() { 
+  
+}
