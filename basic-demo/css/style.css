@@ -194,10 +194,17 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-body, textarea, input, select, option, button {
+body, textarea, select, option, button {
     color: #7f91a3;
     font-family: Lato, sans-serif;
     line-height: 1.38461538462;
+}
+
+input{
+    color: #7f91a3;
+    font-family: Lato, sans-serif;
+    
+
 }
 
 #nav {
@@ -280,6 +287,7 @@ body {
 /*inputs*/
 #msform input, #msform textarea {
     padding: 15px;
+    padding-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 0px;
     margin-bottom: 10px;
@@ -628,12 +636,8 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
 
 }
 
+/* Only for Safari  */
+::i-block-chrome, #msform input, #msform textarea  { padding-bottom: 0px !important  }
 
 
 
-
-/*for FIrefox*/
-
-@-moz-document url-prefix() { 
-  
-}
