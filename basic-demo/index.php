@@ -31,7 +31,7 @@
    			<header id="top">
             <p id="logo">
               <a href="./">
-              <img src="images/logo.png">
+              <img src="images/logo.png" class="img-responsive">
               </a>
             </p>
             <nav id="skip">
