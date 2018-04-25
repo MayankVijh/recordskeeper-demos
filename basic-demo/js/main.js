@@ -30,6 +30,7 @@ $(document).ready(function(){
                   $('#top').css('background', '#22283a');
                   $('#top').css('color', '#ffffff');
                   $('.tgl-light').prop('checked', true);
+                  $('#nav').css('background', '#22283a');
                  
                    $('#togglecontlabel').text('Main Network');
             }

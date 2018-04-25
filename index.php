@@ -22,6 +22,23 @@
    
   </script>
 
+  <!-- critical css here  -->
+  <style type="text/css">
+  	#footer ul {
+    overflow: hidden;
+    list-style: none;
+    margin-right: 0px;
+    padding: 0;
+    width: 98%;
+    margin: auto;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #23293a;
+    border-radius: 0px;
+}
+  </style>
+ <!-- critical css here  -->
 </head>
 <body> <img style="display: none;" width="80" height="80" src="assets/images/spinner.gif" id="request-spinner"> 
 
@@ -30,7 +47,7 @@
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="#">
-	      	<img src="assets/images/logo.png" id="logo" class="img-responsive">
+	      	<img src="assets/images/demologo.png"  class="img-responsive demologo">
 	      </a>
 	    </div>
 	    <ul class="nav navbar-nav">

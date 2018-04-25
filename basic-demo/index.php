@@ -365,7 +365,8 @@
     </div>
 
   </div>
-</div>      
+</div>    
+  
    <footer id="footer">
           <ul>
           <li> &copy; 2016-2018 <span class="date">   Recordskeeper. All rights reserved </span></li>
