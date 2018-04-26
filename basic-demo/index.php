@@ -18,6 +18,7 @@
     <link href = "css/style.css" rel="stylesheet">
     <link href = "css/toggle.css" rel="stylesheet">
    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
 
   </head>
@@ -31,7 +32,7 @@
    			<header id="top">
             <p id="logo">
               <a href="./">
-              <img src="images/logo.png" class="img-responsive">
+              <img src="images/logo.svg" class="img-responsive">
               </a>
             </p>
             <nav id="skip">
@@ -381,6 +382,7 @@
      <li><a href="http://miner.recordskeeper.co/" target="_blank">Miner Statistics</a></li>
             <li><a href="http://airdrop.recordskeeper.co/" target="_blank">Airdrop</a></li>
     <li><a href="http://docs.recordskeeper.co/" target="_blank">Docs</a></li>
+    <!-- <li></li> -->
           </ul>
 </footer>   
 

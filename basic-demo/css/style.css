@@ -1,6 +1,6 @@
 #footer {
 
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 140px;
     text-align: center;
         width: 100%;
@@ -21,7 +21,13 @@
     margin: 0 16px 0 0;
 }
 
-
+*, *:before, *:after {
+    -webkit-transition: visibility .2s ease-in-out 0s, color .2s ease-in-out 0s, background-color .2s ease-in-out 0s, color .2s ease-in-out 0s, border-color .2s ease-in-out 0s, color .2s ease-in-out 0s, opacity .2s ease-in-out 0s;
+    transition: visibility .2s ease-in-out 0s, color .2s ease-in-out 0s, background-color .2s ease-in-out 0s, color .2s ease-in-out 0s, border-color .2s ease-in-out 0s, color .2s ease-in-out 0s, opacity .2s ease-in-out 0s;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -webkit-transition-delay: -0.1s;
+}
 #table-one{
     font-size: 12px;
     width: 82%;
@@ -94,9 +100,9 @@ h2.fs-title.mtop10 {
     margin-left: 20px;
 }
 #logo img{
-        /*width: 275px;*/
+        width: 270px;
     margin-top: 11px;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
 }
 #footer ul li a {
     color: #8a9aab;
@@ -185,7 +191,7 @@ p#reviewData {
   z-index: 2;
 }
 #togglecontlabel{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     margin-top:15px;
 }
@@ -213,7 +219,7 @@ input{
 #nav {
     position: absolute;
     top: 0;
-    right: 57px;
+    right: 20px;
     bottom: 0;
 }
 
@@ -254,6 +260,8 @@ html {
     height: 100%;
    
     background: -webkit-linear-gradient(to left, #989898, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
+    font-family: 'Lato', sans-serif !important;
+
 }
 
 body {
@@ -663,3 +671,135 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
  #footer ul li { position: relative; float: left; margin: 0 16px 0 0; }
  #footer ul li:before { content: "|"; display: block; position: absolute; left: 100%; top: 0; width: 16px; text-align: center; }
 #footer a { color: #7f91a3; }
+
+* { margin: 0; padding: 0; }
+*, :before, :after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html { overflow-y: scroll; min-height: 100%; margin: 0 0 1px; font-size: 100.01%; -webkit-tap-highlight-color: rgba(0,0,0,0); -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling: touch; -ms-content-zooming: none; }
+body { min-height: 100%; background: #ecf1f5; font-size: 62.5%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body, textarea, input, select, option, button { color: #7f91a3; font-family: Lato, Arial, Helvetica, sans-serif; line-height: 1.38461538462; }
+li, dt, dd, p, figure, th, td, caption, legend, pre { font-size: 1.2em; } li *, dt *, dd *, p *, figure *, th *, td *, legend * { font-size: 1em; }
+ul, ol, dl, p, figure, table, pre, h1, h2, h3, h4, h5, h6, legend, .table-wrapper { margin-bottom: 18px; }
+
+article, aside, details, div, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/*! Layout --------- */
+#root { overflow: hidden; position: relative; width: 100%; min-height: 100vh; padding: 61px 59px 0 79px; }
+    #top { position: fixed; left: 0; top: 0; right: 0; z-index: 9; height: 49px; background: #212739; }
+        /*#logo { position: absolute; left: 0; top: 0; bottom: 0;  margin: 0; }*/
+         label {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    font-weight: 400;
+}   
+            
+        #skip { position: fixed; top: 0; left: -10000px; }
+            #skip a:focus, #skip a:active { display: block; position: absolute; left: 10000px; top: 0; z-index: 10001; width: 200px; margin: 15px 0 0 15px; padding: 4px 8px; background: #333; color: #fff; font-weight: 500; font-size: 1.1em; text-align: center; text-decoration: none; }
+        /*#nav { position: absolute;  top: 0; right: 57px; bottom: 0; }*/
+            #nav > ul { float: right; list-style: none; margin: 0; padding: 9px 0 0; margin-right: 22px; }
+                #nav > ul > li { position: relative; float: left; margin: 0 35px 0 0; padding: 0 0 14px; font-size: 1.4em; }
+                    #nav > ul > li > a { display: block; position: relative; z-index: 2; color: #a4aaba; line-height: 31px; }
+                    #nav > ul > li > a i { display: block; float: left; margin: 0 8px 0 0; font-size: 19px; line-height: 31px; }
+                #nav > ul > li.a { margin-right: 65px; }    
+                    #nav > ul > li.a > a { color: #4e5874; }
+                #nav > ul > li.b { margin-left: 59px; }
+                    #nav > ul > li.b > a { min-width: 31px; padding: 0 6px; border-radius: 99px; background: #a118b9; color: #fff; text-decoration: none; text-align: center; }
+                #nav > ul > li.sub { }
+                    #nav > ul > li.sub > span.toggle { display: block; position: absolute; left: 0; right: -10px; top: -10px; bottom: 0; z-index: 9; width: auto; cursor: pointer; }
+                    #nav > ul > li.sub > a { padding-right: 20px; }
+                    #root #nav > ul > li.sub > a:before { content: "\e918"; left: auto; right: 0; width: auto; padding-top: 2px; color: #5c6888; font-size: 7px; }
+                    #nav > ul > li.sub.toggle > a:before { -webkit-transform: rotate(180deg) translateY(-2px); -ms-transform: rotate(180deg) translateY(-2px); transform: rotate(180deg) translateY(-2px); }
+            #nav > ul > li > ul { visibility: hidden; position: absolute; right: -8px; top: 100%; list-style: none; min-width: 183px; margin: 0; padding: 0; box-shadow: 0 1px 13px rgba(76,145,196,.56); background: #fff; opacity: 0; }
+                #nav > ul > li > ul:before { content: "\e91e"; display: block; position: absolute; right: 23px; top: -8px; z-index: 1; color: #fff; font-size: 10px; font-weight: 400; font-family: i; line-height: 10px; text-shadow: 0 1px 13px rgba(76,145,196,.56); }
+                #nav > ul > li > ul li { position: relative; z-index: 2; background: #fff; font-size: 14px; }
+                #nav > ul > li > ul li a { display: block; overflow: hidden; position: relative; padding: 13px 23px; border-bottom: 1px solid #d4e0ea; color: #7f91a3; text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }
+                    #nav > ul > li > ul li a:hover { color: #212739; }
+                    #nav > ul > li > ul li.active a { padding-right: 46px; color: #212739; }
+                        #root #nav > ul > li > ul li.active a:after { content: "\e91b"; left: auto; right: 12px; width: auto; color: #a118b9; font-size: 20px; }
+                    #nav > ul > li > ul li:last-child a { border-width: 0; }
+                #nav > ul > li > ul li.a { padding: 22px 28px 25px; font-size: 13px; text-align: center; }
+                    #nav > ul > li > ul li.a a { padding: 5px; border-radius: 15px; border: 1px dashed #a4aaba; color: #a4aaba; }
+                    #root #nav > ul > li > ul li.a a:after { content: "\e904"; left: 12px; width: auto; color: #a118b9; font-size: 8px; }
+            /*#nav > ul:first-child { float: left; }*/
+                #nav > ul:first-child > li { font-size: 1.6em; }
+                #nav > ul:first-child > li:before { content: ""; display: block; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; border-radius: 8px; background: #3bdbd2; }
+                #nav > ul:first-child > li > a { padding-left: 16px; }
+                #nav > ul:first-child > li span { margin: 0 0 0 5px; font-size: .75em; }
+        #top > .menu, #heading > .menu { display: block; position: absolute; right: 0; top: -3000em; z-index: 9; width: 49px; height: 49px; color: #fff; font-size: 16px; cursor: pointer; }
+            #top > .menu:before, #heading > .menu:before { content: "\e926"; }
+    #aside { position: fixed; left: 0; top: 49px; bottom: 0; z-index: 8; width: 56px; border: 0 solid #3a4156; background: #212739; }
+        #aside > ul { list-style: none; margin: 0; padding: 0; }
+            #aside > ul > li > a { display: block; overflow: hidden; position: relative; height: 58px; border: 0 solid #3a4156; border-bottom-width: 1px; color: #7580a0; font-size: 21px; text-align: left; text-indent: -3000em; text-decoration: none; }     
+                #aside > ul > li > a:before, #nav > ul > li > ul li a:before { content: ""; display: block; position: absolute; left: -3px; top: 0; bottom: 0; width: 3px; background: #a118b9; }
+                #aside > ul > li > a i { display: block; position: absolute; left: 50%; top: 50%; width: 100%; width: 21px; height: 21px; margin: -10.5px 0 0 -10.5px; font-weight: 400; font-family: i; font-size: 21px; line-height: 21px; text-align: center; text-indent: 0; }
+                    #aside > ul > li > a i:after { content: ""; display: block; position: absolute; left: 50%; top: 50%; z-index: 2; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 99px; border: 1px solid #a118b9; opacity: 0; }
+                    #aside > ul > li > a i.icon-bitcoin-square { width: 26px; height: 16px; margin: -8px 0 0 -13px; font-size: 16px; line-height: 16px; }
+                    #aside > ul > li > a i.icon-bitcoin-square:after { width: 28px; height: 18px; margin: -9px 0 0 -14px; border-radius: 0; font-size: 16px; line-height: 16px; }
+            #aside > ul > li.active > a, #aside > ul > li > a:hover { border-color: #212739; background: #32394d; color: #fff; }
+                #aside > ul > li.active > a:before, #aside > ul > li > a:hover:before, #nav > ul > li > ul li a:hover:before, #nav > ul > li > ul li.active a:before { left: 0; }
+    #heading { position: relative; z-index: 5; margin: -12px -59px 12px -23px; padding: 0 59px 0 0; background: #fff; }
+        #heading h1, #heading h2, #heading h3, #heading h4, #heading h5, #heading h6 { float: left; min-width: 175px; margin: 0 29px 0 0; padding: 0 20px; background: #293043; color: #fff; font-size: 1.6em; font-weight: 400; line-height: 57px; }
+        #heading ul { list-style: none; margin: 0; padding: 12px 0 0; }
+            #heading ul li { float: left; margin: 0 25px 0 0; font-size: 1.3em; }
+            #heading ul li.text-right { float: right; }
+            #heading ul li a, #heading ul li label { display: block; position: relative; height: 31px; padding: 0 22px 0 36px; border-radius: 31px; border: 1px solid #212739; color: #212739; line-height: 29px; text-decoration: none; cursor: pointer; }
+                #heading ul li label.active { box-shadow: 0 2px 4px rgba(11,31,79,.5); background: #212739; color: #fff; }
+                #heading ul li a { padding-left: 30px; border-color: #a4aaba; border-style: dashed; color: #a4aaba; }
+                    #root #heading ul li a:before { content: "\e904"; left: 12px; width: auto; color: #a118b9; font-size: 9px; }
+                #heading ul li label .input, #heading ul li label input { display: block; position: absolute; top: 50%; margin: -7.5px 0 0; line-height: 13px; }
+                #heading ul li label .input, #heading ul li label input { -webkit-transform: scale(.86666666666); -ms-transform: scale(.86666666666); transform: scale(.86666666666); }             
+                    #heading ul li label .input { left: 9px; width: 15px; height: 15px; border-radius: 9px; border: 1px solid #212739; color: #fff; font-size: 6.5px; line-height: 13px; text-align: center; }
+                        #heading ul li label .input:before { content: "\e91a"; opacity: 0; }
+                    #heading ul li label.active .input { border-color: #a118b9; background: #a118b9; }
+                #heading ul li.text-right a { padding: 0 0 0 18px; border-width: 0; color: #5c6888; }
+                    #root #heading ul li.text-right a:before { content: "\e917"; left: 0; color: #5c6888; font-size: 11px; }
+                    #heading ul li.text-right a i { display: inline-block; position: relative; top: 1px; margin: 0 0 0 5px; color: #a4aaba; }
+        #heading > .menu { color: #5c6888; }
+    #mobile { overflow-x: hidden; overflow-y: auto; position: fixed; left: -250px; right: auto; top: 49px; bottom: 0; z-index: 100; width: 240px; margin: 0; box-shadow: 0 0 5px rgba(0,0,0,.25); border-top: 1px solid #3a4156; background: #212739; line-height: 1.55; }
+        #mobile > ul { list-style: none; margin: 0; padding: 0; }
+        #mobile > ul > li { position: relative; float: none; margin: 0; border: 0 solid #3a4156; border-bottom-width: 1px; font-size: 1.6em; }
+        #mobile > ul > li > a { display: block; position: relative; z-index: 1; float: none; padding: 8px 20px; color: #fff; text-transform: none; text-decoration: none; } 
+        #mobile > ul > li > a span { font-size: .75em; }
+        #mobile > ul > li.b > a { background: #a118b9; color: #fff; }
+        #mobile > ul > li.sub > a { padding-right: 60px; }
+            #mobile > ul > li > .toggle { display: block; position: absolute; right: 0; top: 0; z-index: 2; width: 41px; height: 41px; cursor: pointer; }
+            #mobile > ul > li > .toggle:before { content: "\e91f"; display: block; position: absolute; left: 0; top: 50%; width: 100%; margin: -10px 0 0; color: #fff; font-family: i; font-size: 4px; font-weight: 400; line-height: 20px; text-align: center; }
+            #mobile > ul > li.toggle > .toggle:before { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+        #mobile > ul > li > ul { position: absolute; left: -3000em; top: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid #3a4156; background: rgba(0,0,0,.25); }
+            #mobile > ul > li.toggle > ul { position: relative; left: 0; }
+            #mobile > ul > li > ul li { position: relative; margin: 0; padding: 0; border-top: 1px solid #393939; font-size: 14px; }
+            #mobile > ul > li > ul li:first-child { border: 0; }
+            #mobile > ul > li > ul li a { display: block; padding: 4px 20px 4px; color: #fff; text-decoration: none; }
+            #mobile > ul > li > ul li.a a:before { content: "\e904"; display: inline-block; position: relative; top: -1px; margin: 0 6px 0 0; font-family: i; font-size: 8px; font-weight: 400; line-height: 1px; }
+        #mobile ul + ul li.mobile-hide { position: relative; left: 0; top: 0; }
+
+#content:after, #top:after, #footer:after, form p:after, .cols-a:after, #nav:after, #nav > ul:after, #nav > ul > li > a:after, #heading:after, #heading > ul:after, .tabs-a > ul:after, #footer ul:after, .tabs-a > div:after, .double:after, .list-inline:after, .quadruple:after, .popup-a .box-inset:after, .module-box:after, .gallery-a:after, .link-btn:after, .list-a ul:after, .list-inline li:after, .list-inline form:after, .list-inline p:after, .list-charts figure:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+}
+*, *:before, *:after {
+    -webkit-transition: visibility .2s ease-in-out 0s, color .2s ease-in-out 0s, background-color .2s ease-in-out 0s, color .2s ease-in-out 0s, border-color .2s ease-in-out 0s, color .2s ease-in-out 0s, opacity .2s ease-in-out 0s;
+    transition: visibility .2s ease-in-out 0s, color .2s ease-in-out 0s, background-color .2s ease-in-out 0s, color .2s ease-in-out 0s, border-color .2s ease-in-out 0s, color .2s ease-in-out 0s, opacity .2s ease-in-out 0s;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -webkit-transition-delay: -0.1s;
+}
+.hidden, [hidden], template, #nav em, .js #heading ul li label input, #footer ul li:last-child:before, #nav > ul > li > ul li.a a:before, #mobile em, #mobile i, .checklist-pin label input, .file-a label input, .check-a label input, #aside a span, .list-inline form.toggle a.toggle, .list-inline label {
+    position: absolute;
+    left: -3000em;
+    top: 0;
+    right: auto;
+    bottom: auto;
+}
+
+
+
+
+

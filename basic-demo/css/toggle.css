@@ -40,8 +40,8 @@
 .tgl + .tgl-btn {
     outline: 0;
     display: block;
-    width: 6em;
-    height: 3em;
+    width: 4em;
+    height: 2em;
     position: relative;
     cursor: pointer;
     -webkit-user-select: none;
