@@ -47,7 +47,7 @@
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="#">
-	      	<img src="assets/images/demologo.png"  class="img-responsive demologo">
+	      	<img src="assets/images/demologo.svg"  class="img-responsive demologo">
 	      </a>
 	    </div>
 	    <ul class="nav navbar-nav">
