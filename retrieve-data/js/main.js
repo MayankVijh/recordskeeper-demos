@@ -75,7 +75,7 @@ $(document).ready(function(){
             {
              net = "TestNetwork";
                localStorage.setItem("network", "TestNetwork");
-                $('#top').css('background', '#54b2ce');
+                // $('#top').css('background', '#54b2ce');
                  $('#togglecontlabel').text('Test Network');
                  window.location.href = "index.php";
                  $('.action-button').css('background', '#54b2ce');
@@ -257,11 +257,16 @@ function liststreamData(key1, netw) {
 
               var relen = re.length;
               CONSOLE_DEBUG && console.log("resultarray", relen);
+              
+              jQuery(".table-responsive").css("display", "block");
+              jQuery(".norecords").css("display", "none");
 
               if (relen == 0 ){
 
                 jQuery(".table-responsive").css("display", "none");
+                jQuery(".norecords").css("display", "block");
               }
+
           
               var y = x.error;
               if (y != null){
@@ -276,6 +281,7 @@ function liststreamData(key1, netw) {
               else{
               // var p = x.result[0].publishers[0];
             
+                       
 
                       x.result = x.result.reverse();
 

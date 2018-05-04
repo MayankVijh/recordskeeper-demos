@@ -15,6 +15,11 @@
         width: 78%;
     margin: 0 auto;
 }
+.norecords{
+    color: #de5a5a;
+    font-weight: bold;
+    display: none;
+}
 #footer ul li {
     position: relative;
     float: left;
@@ -628,7 +633,7 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
         }
         #nav {
         right: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
     background: #54b2ce;
     position: initial;
     text-align: right;
@@ -808,7 +813,7 @@ html {
     margin-bottom:49px;
   }
   #footer {
-    bottom: 20px;
+    /*bottom: 20px;*/
     width: 100%;
     position: absolute;
     /*height: $height-footer;*/
