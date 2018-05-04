@@ -18,7 +18,6 @@ var response;
 var registeraddr;
 var captchares;
 var hexData; 
-var rowCount;
 // global flags declaration ends here // 
 
 $(document).ready(function(){
@@ -32,7 +31,6 @@ $(document).ready(function(){
                   $('#top').css('color', '#ffffff');
                   $('.tgl-light').prop('checked', true);
                   $('#nav').css('background', '#22283a');
-                  $('#table-one th').css('background', '#22283a');
                  
                    $('#togglecontlabel').text('Main Network');
             }
@@ -69,22 +67,6 @@ $(document).ready(function(){
               // $('footer').css("margin-top", "450px");
           });
           $('#youcanfind').hide();
-
-          rowCount = $('#table-one').length;
-CONSOLE_DEBUG && console.log("rowcount", rowCount);
-
-
-  
-
- if(rowCount > 1 ){
-  $('#table-one').css("display", "table");
-    $('#youcanfind').css("display", "block");
-
-}else{
-  $('#table-one').css("display", "none");
-  $('#youcanfind').css("display", "none");
-  $('.noteContainer').css("display", "none");
-}
      
 });
 
@@ -92,11 +74,10 @@ CONSOLE_DEBUG && console.log("rowcount", rowCount);
         if($('#cb1').is(':checked'))
             {
              net = "TestNetwork";
-                              window.location.href = "index.php";
-
                localStorage.setItem("network", "TestNetwork");
                 $('#top').css('background', '#54b2ce');
                  $('#togglecontlabel').text('Test Network');
+                 window.location.href = "index.php";
                  $('.action-button').css('background', '#54b2ce');
 
               
@@ -105,13 +86,13 @@ CONSOLE_DEBUG && console.log("rowcount", rowCount);
             {
                 net = "MainNetwork";
                localStorage.setItem("network","MainNetwork");
-               window.location.href = "index.php";
-
+                
                  $('#top').css('background', '#22283a');
                  $('#table-one th').css('background', '#22283a');
                   $('#top').css('color', '#ffffff');
                  
                    $('#togglecontlabel').text('Main Network');
+                   window.location.href = "index.php";
             }
     }
     function networkToggle(){
@@ -238,24 +219,18 @@ function hex2a(hexx) {
   
 
 $('#retrieve').click(function(){
-
-  CONSOLE_DEBUG && console.log("rowcount", rowCount);
     
 $('#table-one').find("tr:not(:first)").remove();
 $('#table-one').css("display", "table");
 
-if(rowCount < 2){
-  $('#table-one').css("display", "none");
 
-}
-else {
      var key1 = document.getElementById('regist').value;
     liststreamData(key1,net);
 
     $('#youcanfind').show();
 
   
-    }
+
 
    
     
@@ -271,8 +246,22 @@ function liststreamData(key1, netw) {
           url: 'php/liststreamdata.php',
           data:({key: ac, net: local}),
           success:function(Response) {
+
+
               var x = Response;
               x = JSON.parse(x);
+
+
+              var re = x.result;
+              CONSOLE_DEBUG && console.log("resultarray", re);
+
+              var relen = re.length;
+              CONSOLE_DEBUG && console.log("resultarray", relen);
+
+              if (relen == 0 ){
+
+                jQuery(".table-responsive").css("display", "none");
+              }
           
               var y = x.error;
               if (y != null){
@@ -291,12 +280,14 @@ function liststreamData(key1, netw) {
                       x.result = x.result.reverse();
 
                    for(var i= 0; i < x.result.length; i++) {
+
                       CONSOLE_DEBUG &&  console.log("valueof x",x.result[i] );
                       var publisherAddr = x.result[i].publishers;
                       var publisherData = hex2a(x.result[i].data);
                       var publisherKey = x.result[i].key;
                       var txid = x.result[i].txid;
                       var timestamp = x.result[i].time;
+
                       CONSOLE_DEBUG && console.log("timestamp", timestamp);
                       
                       var date = new Date(timestamp*1000);
@@ -307,7 +298,6 @@ function liststreamData(key1, netw) {
                       var hours = date.getHours();
                       var minutes = date.getMinutes();
                       var seconds = date.getSeconds();
-                      // alert(year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds);
 
 
 

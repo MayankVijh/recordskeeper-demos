@@ -1,4 +1,4 @@
-
+ 
 <?php
 
 ?>
@@ -64,7 +64,7 @@
 		<!-- <form> -->
 			<div class="row  ">
 				<div id="container">
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<a href="/basic-demo/">
 							<div class="form-container">
 								<h2>Basic Demo</h2>
@@ -74,7 +74,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<a href="/proof-of-existence/">
 							<div class="form-container">
 								<h2>Proof Of Existence</h2>
@@ -84,6 +84,16 @@
 							</div>
 						</a>
 					</div>
+					<div class="col-md-4">
+						<a href="/basic-demo/">
+							<div class="form-container">
+								<h2>Retrieve Data</h2>
+								<p class="cardsp">
+									This Basic Demo demonstrates how data retrieved on RecordsKeeper Blockchain.
+								</p>
+							</div>
+						</a>
+					</div>z
 				</div>
 			</div>
 			
