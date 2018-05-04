@@ -79,17 +79,17 @@
 							<div class="form-container">
 								<h2>Proof Of Existence</h2>
 								<p class="cardsp">
-									This Basic Demo demonstrates the use case of Document Verification on Blockchain.
+									This demo demonstrates the use case of Document Verification on Blockchain.
 								</p>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="/basic-demo/">
+						<a href="/retrieve-data/">
 							<div class="form-container">
 								<h2>Retrieve Data</h2>
 								<p class="cardsp">
-									This Basic Demo demonstrates how data retrieved on RecordsKeeper Blockchain.
+									This demo demonstrates how data retrieved on RecordsKeeper Blockchain.
 								</p>
 							</div>
 						</a>

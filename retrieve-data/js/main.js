@@ -31,7 +31,7 @@ $(document).ready(function(){
                   $('#top').css('color', '#ffffff');
                   $('.tgl-light').prop('checked', true);
                   $('#nav').css('background', '#22283a');
-                 
+                  $('#table-one th').css('background', '#22283a');
                    $('#togglecontlabel').text('Main Network');
             }
             else if(net == "TestNetwork"){
@@ -219,6 +219,9 @@ function hex2a(hexx) {
   
 
 $('#retrieve').click(function(){
+
+  jQuery(".table-responsive").css("display", "none");
+  jQuery(".norecords").css("display", "block");
     
 $('#table-one').find("tr:not(:first)").remove();
 $('#table-one').css("display", "table");
@@ -257,7 +260,7 @@ function liststreamData(key1, netw) {
 
               var relen = re.length;
               CONSOLE_DEBUG && console.log("resultarray", relen);
-              
+
               jQuery(".table-responsive").css("display", "block");
               jQuery(".norecords").css("display", "none");
 
