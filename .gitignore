@@ -1,3 +1,5 @@
 *.DS_Store
 basic-demo/php/config-mainnet.php
 basic-demo/php/config-testnet.php
+retrieve-data/php/config-mainnet.php
+retrieve-data/php/config-testnet.php

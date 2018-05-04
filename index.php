@@ -89,11 +89,11 @@
 							<div class="form-container">
 								<h2>Retrieve Data</h2>
 								<p class="cardsp">
-									This demo demonstrates how data retrieved on RecordsKeeper Blockchain.
+									This demo demonstrates how data is retrieved from RecordsKeeper Blockchain.
 								</p>
 							</div>
 						</a>
-					</div>z
+					</div>
 				</div>
 			</div>
 			
