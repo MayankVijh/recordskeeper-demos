@@ -807,21 +807,17 @@ article, aside, details, div, figcaption, figure, footer, header, hgroup, main, 
 
 
 html {
-  min-height: 100%;
-  position: relative;
+  height: 100%;
 }
-  body {
-    margin-bottom: $height-footer;
-  }
-  #footer {
-    bottom: 20px;
-    width: 100%;
-    position: absolute;
-    /*height: $height-footer;*/
-    /*background-color: #f5f5f5;*/
-    
-  }
-
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+#footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
   #footer ul { overflow: hidden; list-style: none; margin-right: 0px; padding: 0; width: 84%;
     margin: auto; }
