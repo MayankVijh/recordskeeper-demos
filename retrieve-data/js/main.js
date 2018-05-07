@@ -18,6 +18,7 @@ var response;
 var registeraddr;
 var captchares;
 var hexData; 
+var stringkey;
 // global flags declaration ends here // 
 
 $(document).ready(function(){
@@ -33,6 +34,8 @@ $(document).ready(function(){
                   $('#nav').css('background', '#22283a');
                   $('#table-one th').css('background', '#22283a');
                    $('#togglecontlabel').text('Main Network');
+                  stringkey = "https://explorer.recordskeeper.co/RecordsKeeper%20Mainnet/streamitems/root";
+
             }
             else if(net == "TestNetwork"){
 
@@ -45,6 +48,8 @@ $(document).ready(function(){
                   });
                   // $('a').css('color', '#54b2ce');
                   // $('li').before().css('background', '#54b2ce');
+                   stringkey = "https://test-explorer.recordskeeper.co//RecordsKeeper%20Testnet/keyitems/root/";
+
             }
             else{
                 net == "TestNetwork";
@@ -56,6 +61,9 @@ $(document).ready(function(){
                   $(".action-button").hover(function() {
                     $(".action-button").css('box-shadow', '0 0 0 2px white, 0 0 0 3px #54b2ce');
                   });
+
+                stringkey = "https://test-explorer.recordskeeper.co//RecordsKeeper%20Testnet/keyitems/root/";
+
             }
           networkToggle();
 
@@ -225,10 +233,14 @@ $('#retrieve').click(function(){
     
 $('#table-one').find("tr:not(:first)").remove();
 $('#table-one').css("display", "table");
+registval = $('#regist').val();
+CONSOLE_DEBUG && console.log(registval);
 
 
      var key1 = document.getElementById('regist').value;
     liststreamData(key1,net);
+     $("#streamlink").attr("href", stringkey+registval);
+    
 
     $('#youcanfind').show();
 
