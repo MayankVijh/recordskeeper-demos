@@ -220,8 +220,8 @@ function hex2a(hexx) {
 
 $('#retrieve').click(function(){
 
-  jQuery(".table-responsive").css("display", "none");
-  jQuery(".norecords").css("display", "block");
+  // jQuery(".table-responsive").css("display", "none");
+  // jQuery(".norecords").css("display", "block");
     
 $('#table-one').find("tr:not(:first)").remove();
 $('#table-one').css("display", "table");
@@ -261,9 +261,7 @@ function liststreamData(key1, netw) {
               var relen = re.length;
               CONSOLE_DEBUG && console.log("resultarray", relen);
 
-              jQuery(".table-responsive").css("display", "block");
-              jQuery(".norecords").css("display", "none");
-
+              
               if (relen == 0 ){
 
                 jQuery(".table-responsive").css("display", "none");
@@ -271,19 +269,13 @@ function liststreamData(key1, netw) {
               }
 
           
-              var y = x.error;
-              if (y != null){
-                  swal({
-                              title:'Sorry, no Data was published with the specified Key identifier!',
-                              type: 'error',
-                              confirmButtonClass: "btn-danger",
-                              confirmButtonText: "OK!",
-                              timer: 15000
-                      });
-              }
+            
               else{
               // var p = x.result[0].publishers[0];
-            
+
+                       jQuery(".table-responsive").css("display", "block");
+                      jQuery(".norecords").css("display", "none");
+
                        
 
                       x.result = x.result.reverse();
