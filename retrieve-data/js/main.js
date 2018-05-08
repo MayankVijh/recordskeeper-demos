@@ -34,7 +34,7 @@ $(document).ready(function(){
                   $('#nav').css('background', '#22283a');
                   $('#table-one th').css('background', '#22283a');
                    $('#togglecontlabel').text('Main Network');
-                  stringkey = "https://explorer.recordskeeper.co/RecordsKeeper%20Mainnet/streamitems/root";
+                  stringkey = "https://explorer.recordskeeper.co/RecordsKeeper%20Mainnet/streamitems/root/";
 
             }
             else if(net == "TestNetwork"){
@@ -231,8 +231,6 @@ $('#retrieve').click(function(){
   // jQuery(".table-responsive").css("display", "none");
   // jQuery(".norecords").css("display", "block");
     
-$('#table-one').find("tr:not(:first)").remove();
-$('#table-one').css("display", "table");
 registval = $('#regist').val();
 CONSOLE_DEBUG && console.log(registval);
 
@@ -242,7 +240,7 @@ CONSOLE_DEBUG && console.log(registval);
      $("#streamlink").attr("href", stringkey+registval);
     
 
-    $('#youcanfind').show();
+    
 
   
 
@@ -287,6 +285,9 @@ function liststreamData(key1, netw) {
 
                        jQuery(".table-responsive").css("display", "block");
                       jQuery(".norecords").css("display", "none");
+                      $('#table-one').find("tr:not(:first)").remove();
+                      $('#table-one').css("display", "table");
+                      $('#youcanfind').show();
 
                        
 
@@ -361,4 +362,24 @@ $('#authnext').click(function(){
   
 });
 
+
+
+function loadXMLDoc() {
+    var xmlhttp;
+    xmlhttp=new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange=function()
+
+    {
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      {
+          document.getElementById("fromserver").innerHTML=xmlhttp.responseText;
+      }
+
+    }
+
+    xmlhttp.open("POST","post",true);
+
+    xmlhttp.send();
+}
 
