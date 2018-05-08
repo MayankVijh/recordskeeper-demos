@@ -78,6 +78,12 @@
                           </p>
                           <div> 
                               <div class="row topbot25">
+                                  <div class="dataformatcont font13">
+                                    <p class="font13">Please specify the Data format that you want to retrieve.</p>
+                                    <input type="radio" name="radioval" value="hexvalue" checked > Hex<br>
+                                    <input type="radio" name="radioval" value="stringvalue"> String<br>
+
+                                  </div>
                                   <div class="">
                                     
                                       <input type="text" name = "key" class="abcds" value="" placeholder="Enter record key " id = "regist"/>
@@ -89,7 +95,7 @@
                                           <div class="font13 text-left col-md-7 overx" id = "publisheraddress"></div>
                                       </div>
                                        <div class="row mtb5">
-                                          <div class="font15 themecolor text-left ext col-md-3">Record Identifier : </div>
+                                           <div class="font15 themecolor text-left ext col-md-3">Record Identifier : </div>
                                            <div class="font13 text-left col-md-7 overx" id = "savedkey"></div>
                                       </div>
                                        <div class="row mtb5">

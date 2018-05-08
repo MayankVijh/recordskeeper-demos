@@ -804,8 +804,15 @@ article, aside, details, div, figcaption, figure, footer, header, hgroup, main, 
     bottom: auto;
 }
 
-
-
+input[type="radio"]{
+    width: auto !important;
+    margin: 5px;
+}
+.dataformatcont{
+        width: 83%;
+    margin: auto;
+    text-align: left;
+}
 html {
   height: 100%;
 }

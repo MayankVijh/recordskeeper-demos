@@ -19,6 +19,7 @@ var registeraddr;
 var captchares;
 var hexData; 
 var stringkey;
+var radioValue;
 // global flags declaration ends here // 
 
 $(document).ready(function(){
@@ -233,8 +234,9 @@ $('#retrieve').click(function(){
     
 registval = $('#regist').val();
 CONSOLE_DEBUG && console.log(registval);
-
-
+radioValue = $("input[name='radioval']:checked").val();
+CONSOLE_DEBUG && console.log(radioValue);
+  // jQuery("input[name='radioval']:checked").val();
      var key1 = document.getElementById('regist').value;
     liststreamData(key1,net);
      $("#streamlink").attr("href", stringkey+registval);
@@ -283,6 +285,8 @@ function liststreamData(key1, netw) {
               else{
               // var p = x.result[0].publishers[0];
 
+
+
                        jQuery(".table-responsive").css("display", "block");
                       jQuery(".norecords").css("display", "none");
                       $('#table-one').find("tr:not(:first)").remove();
@@ -297,7 +301,15 @@ function liststreamData(key1, netw) {
 
                       CONSOLE_DEBUG &&  console.log("valueof x",x.result[i] );
                       var publisherAddr = x.result[i].publishers;
+
                       var publisherData = hex2a(x.result[i].data);
+
+
+                      if(radioValue == "hexvalue"){
+                          publisherData = toHex(publisherData);
+                      }
+
+                       
                       var publisherKey = x.result[i].key;
                       var txid = x.result[i].txid;
                       var timestamp = x.result[i].time;
@@ -383,3 +395,14 @@ function loadXMLDoc() {
     xmlhttp.send();
 }
 
+
+
+//function that converts any string to hex
+
+function toHex(str) {
+    var hex = '';
+    for(var i=0;i<str.length;i++) {
+        hex += ''+str.charCodeAt(i).toString(16);
+    }
+    return hex;
+}
