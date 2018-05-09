@@ -80,8 +80,14 @@
                               <div class="row topbot25">
                                   <div class="dataformatcont font13">
                                     <p class="font13">Please specify the Data format that you want to retrieve.</p>
-                                    <input type="radio" name="radioval" value="hexvalue" checked > Hex<br>
-                                    <input type="radio" name="radioval" value="stringvalue"> String<br>
+                                    <span class="hexleft">
+                                        <input type="radio" name="radioval" value="hexvalue" checked > Hex<br>
+
+                                    </span>
+                                    <span>
+                                        <input type="radio" name="radioval" value="stringvalue"> String<br>
+                                    </span>
+                                    
 
                                   </div>
                                   <div class="">

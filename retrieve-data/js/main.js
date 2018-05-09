@@ -1,7 +1,7 @@
 //declaring global flags here //
 
 
-var CONSOLE_DEBUG = true;
+var CONSOLE_DEBUG = false;
 var first ='';
 var privkey1;
 var  pubaddr;

@@ -812,6 +812,11 @@ input[type="radio"]{
         width: 83%;
     margin: auto;
     text-align: left;
+        margin-bottom: 15px;
+}
+.hexleft{
+        float: left;
+    margin-right: 10px;
 }
 html {
   height: 100%;
