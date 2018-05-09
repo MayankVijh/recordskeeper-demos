@@ -298,7 +298,7 @@ body {
 /*inputs*/
 #msform input, #msform textarea {
     padding: 15px;
-    padding-bottom: 5px;
+    /*padding-bottom: 5px;*/
     border: 1px solid #ccc;
     border-radius: 0px;
     margin-bottom: 10px;
@@ -799,7 +799,18 @@ article, aside, details, div, figcaption, figure, footer, header, hgroup, main, 
     bottom: auto;
 }
 
-
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+#footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
 
 
 

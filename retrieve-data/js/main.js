@@ -20,6 +20,7 @@ var captchares;
 var hexData; 
 var stringkey;
 var radioValue;
+
 // global flags declaration ends here // 
 
 $(document).ready(function(){
