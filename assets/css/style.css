@@ -240,8 +240,9 @@ button.btn.btn-default.createWalBtn {
 	}
 
     #footer{
-        width: 89%;
-        position: relative;
+        width: 89% !important;
+        position: relative !important;
+        left: 1.8%;
     }
 
 }
@@ -250,6 +251,7 @@ button.btn.btn-default.createWalBtn {
 
     #footer{
         width: 83%;
+        left: 1%;
     }
 }
 
@@ -263,7 +265,7 @@ button.btn.btn-default.createWalBtn {
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    position: relative;
+    position: relative !important;
     /*margin-top: 140px;*/
 }
 
