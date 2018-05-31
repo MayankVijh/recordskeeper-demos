@@ -207,8 +207,8 @@
                                 <p class="font15">
                                     Enter your private key
                                   </p>
-                                  <input id="password-field" type="password" name="password" placeholder="Enter your private key" value="">
-                                  <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></i>
+                                  <input id="password-field" type="password" name="password" placeholder="Enter your private key" value="" class="afterpublish">
+                                  <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password afterpublish"></i>
                             </div>
                             
                            

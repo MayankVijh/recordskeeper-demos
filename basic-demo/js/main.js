@@ -591,6 +591,7 @@ $('#authorize').click(function(){
    privkey1 = document.getElementById('password-field').value;
     signrawtransaction(net);
     $('#reviewPrev').css("display", "none");
+    $('.afterpublish').css("display", "none");
     // $('#authorize').prop("disabled", true);
     // $('#authorize').addClass("disabledbtn");
      // $('#authorize').attr('value', 'Published');
