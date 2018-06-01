@@ -46,8 +46,8 @@
               <ul>
                 
                 <div id="togglecont">
-                  <input class="tgl tgl-light" id="cb1" type="checkbox"/>
-                      <label class="tgl-btn" for="cb1"></label>
+ <!--                  <input class="tgl tgl-light" id="cb1" type="checkbox"/>
+                      <label class="tgl-btn" for="cb1"></label> -->
                 </div>
                 <span >
                   <label id="togglecontlabel">TestNetwork</label>
