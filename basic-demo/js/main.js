@@ -161,21 +161,22 @@ function CreateKeyPairs(net) {
         CONSOLE_DEBUG && console.log('result key :', pubkey1);
         localStorage.setItem("pubaddr", pubaddr);
         document.getElementById('registerd').value = pubaddr;
-        document.getElementById('modalshowaddress').innerHTML = 'Public Address : '+ pubaddr;
-        document.getElementById('modalshowkey').innerHTML = 'Private Key : ' + privkey1;
+        document.getElementById('modalshowaddress').innerHTML = 'xrk-wallet-address : '+ pubaddr;
+        document.getElementById('modalshowkey').innerHTML = 'xrk-wallet-private-key : ' + privkey1;
+        document.getElementById('modalshowpubkey').innerHTML = 'xrk-wallet-public-key : ' + pubkey1;
         
         
         ///////////////
-         var dataStr = "data:text/json;charset=utf-8," + ('{'+'"xrk_address"'+":"+'"'+pubaddr+'"'+","+'"xrk_private_key"'+":"+'"'+privkey1+'"'+'}');
+         var dataStr = "data:text/json;charset=utf-8," + ('{'+'"xrk-wallet-address"'+":"+'"'+pubaddr+'"'+","+'"xrk-wallet-private-key"'+":"+'"'+privkey1+'"'+","+'"xrk-wallet-public-key"'+":"+'"'+pubkey1+'"'+'}');
           var dlAnchorElem = document.getElementById('downloadlink');
           dlAnchorElem.setAttribute("href",     dataStr     );
 
                 if(net == "MainNetwork"){
-                     dlAnchorElem.setAttribute("download", "Recordskeeper-wallet.json");
+                     dlAnchorElem.setAttribute("download", "rk-wallet-"+ pubaddr +".json");
                      dlAnchorElem.click();
                  }else if (net == "TestNetwork"){
 
-                   dlAnchorElem.setAttribute("download", "Recordskeeper-test-wallet.json");
+                   dlAnchorElem.setAttribute("download", "rk-test-wallet-"+ pubaddr +".json");
                      dlAnchorElem.click();
                  }
                
@@ -202,7 +203,7 @@ function CreateKeyPairs(net) {
 
 
                 var link = document.getElementById('downloadlink');
-                link.href = makeTextFile('{'+'"xrk_address"'+":"+'"'+pubaddr+'"'+","+'"xrk_private_key"'+":"+'"'+privkey1+'"'+'}');
+                 link.href = makeTextFile('{'+'"xrk-wallet-address"'+":"+'"'+pubaddr+'"'+","+'"xrk-private-key"'+":"+'"'+privkey1+'"'+","+'"xrk-public-key"'+":"+'"'+pubkey1+'"'+'}');
                 link.style.display = 'block';
 
  

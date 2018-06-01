@@ -7,6 +7,7 @@
     margin: 0 auto;
     margin-top: 140px;
 }
+
 #footer ul {
     overflow: hidden;
     list-style: none;
@@ -813,4 +814,7 @@ body {
 }
 
 
+p#modalshowpubkey{
 
+    word-wrap: break-word;
+}

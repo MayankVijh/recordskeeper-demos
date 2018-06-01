@@ -357,6 +357,10 @@
         <p id ="modalshowkey">
           
         </p>
+        <p id ="modalshowpubkey">
+          
+        </p>
+
            <a download="Recordskeeper-wallet-key.json" id="downloadlink" download>Download</a>
 
       </div>
