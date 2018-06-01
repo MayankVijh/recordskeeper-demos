@@ -37,7 +37,7 @@ $(document).ready(function(){
             else if(net == "TestNetwork"){
 
                  $('#top').css('background', '#54b2ce');
-                 $('#togglecontlabel').text('Test Network');
+                 $('#togglecontlabel').text('This demo is working on Test Network');
                   $('.action-button').css('background', '#54b2ce');
                   
                   $(".action-button").hover(function() {
@@ -48,7 +48,7 @@ $(document).ready(function(){
             }
             else{
                 net == "TestNetwork";
-                localStorage.setItem("network", "TestNetwork");
+                localStorage.setItem("network", "This demo is working on Test Network");
                  $('#top').css('background', '#54b2ce');
                  $('#togglecontlabel').text('Test Network');
                   $('.action-button').css('background', '#54b2ce');
@@ -73,24 +73,25 @@ $(document).ready(function(){
  function ToggleNetwork(){
         if($('#cb1').is(':checked'))
             {
-             net = "TestNetwork";
+                net = "MainNetwork";
+               localStorage.setItem("network","MainNetwork");
+                
+                 $('#top').css('background', '#22283a');
+                $('#top').css('color', '#ffffff');
+                 
+                   $('#togglecontlabel').text('Main Network');
+                   window.location.href = "index.php";
+              
+            }
+            else
+            {
+              
+              net = "TestNetwork";
                localStorage.setItem("network", "TestNetwork");
                 $('#top').css('background', '#54b2ce');
                  $('#togglecontlabel').text('Test Network');
                  window.location.href = "index.php";
                  $('.action-button').css('background', '#54b2ce');
-              
-            }
-            else
-            {
-                net = "MainNetwork";
-               localStorage.setItem("network","MainNetwork");
-                
-                 $('#top').css('background', '#22283a');
-                  $('#top').css('color', '#ffffff');
-                 
-                   $('#togglecontlabel').text('Main Network');
-                   window.location.href = "index.php";
             }
     }
     function networkToggle(){

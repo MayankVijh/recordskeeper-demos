@@ -50,7 +50,7 @@
                       <label class="tgl-btn" for="cb1"></label> -->
                 </div>
                 <span >
-                  <label id="togglecontlabel">TestNetwork</label>
+                  <label id="togglecontlabel"> This demo is working on Test Network</label>
                 </span>   
               
                </ul>
