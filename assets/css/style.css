@@ -111,9 +111,10 @@ h2{
 
 
 #navbar{
-	background: rgb(34, 40, 58);
+	background: rgb(84, 178, 206);
     color: rgb(255, 255, 255);
     height: 49px;
+    border: 1px;
 }
 #logo{
 	    width: 275px;

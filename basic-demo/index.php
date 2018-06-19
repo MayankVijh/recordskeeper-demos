@@ -204,7 +204,7 @@
                                      <p class="font15 text-left" id="reviewData">
                                    </div>
                                 </div>
-                                <p class="font15">
+                                <p class="font15 afterpublish">
                                     Enter your private key
                                   </p>
                                   <input id="password-field" type="password" name="password" placeholder="Enter your private key" value="" class="afterpublish">
