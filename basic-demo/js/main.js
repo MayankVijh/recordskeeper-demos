@@ -48,9 +48,9 @@ $(document).ready(function(){
             }
             else{
                 net == "TestNetwork";
-                localStorage.setItem("network", "This demo is working on Test Network");
+                localStorage.setItem("network", "TestNetwork");
                  $('#top').css('background', '#54b2ce');
-                 $('#togglecontlabel').text('Test Network');
+                 $('#togglecontlabel').text('This demo is working on Test Network');
                   $('.action-button').css('background', '#54b2ce');
                   
                   $(".action-button").hover(function() {
