@@ -1,25 +1,48 @@
 #footer {
 
+    /*font-size: 10px;
+    margin-top: 140px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 0 0 0 20px;
+     position: absolute;
+    bottom: 0;
+     left: 6%;
+*/
     font-size: 10px;
     margin-top: 140px;
     text-align: center;
-        width: 100%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 140px;
+    bottom: 0;
+    left: 3%;
+    padding: 0 0 20px;
+   
 }
 
 #footer ul {
     overflow: hidden;
     list-style: none;
-    margin-right: -20px;
+    margin-right: 0px;
     padding: 0;
-        width: 78%;
-    margin: 0 auto;
+       
 }
 #footer ul li {
     position: relative;
     float: left;
     margin: 0 16px 0 0;
+}
+
+#data_id {
+    text-align: left;
+}
+
+#key_id {
+   
+    text-align: left;
+
 }
 
 *, *:before, *:after {
@@ -561,6 +584,11 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
     margin-top: 80px;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+ 
+ html{overflow-y: scroll !important; }
+} 
+
 @media only screen and (max-width: 900px)
 {
         #nav {
@@ -583,7 +611,9 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
     
     font-size: 12px;
     margin-top: 80px;
-    width: 83%;
+     width: 100% !important;
+     position: relative !important;
+     left: 3.8%;
 }
 #footer ul {
     overflow: hidden;
@@ -611,8 +641,8 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
 #footer {
   
     z-index: 1;
- 
-  
+    left: 3.8%;
+     width: 100%;
     font-size: 12px;
     margin-top: 80px;
 }
@@ -635,6 +665,15 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
     text-align: right;
     height: 45px;
     }
+
+    #footer {
+   
+    width: 100%;
+  
+    position: relative !important;
+    /*margin-top: 140px;*/
+}
+
 
 
 }
@@ -667,7 +706,7 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
 
 
 
-  #footer ul { overflow: hidden; list-style: none; margin-right: 0px; padding: 0; width: 78%;
+  #footer ul { overflow: hidden; list-style: none; margin-right: 0px; padding: 0; width: 84%;
     margin: auto; }
  #footer ul li { position: relative; float: left; margin: 0 16px 0 0; }
  #footer ul li:before { content: "|"; display: block; position: absolute; left: 100%; top: 0; width: 16px; text-align: center; }
@@ -676,7 +715,7 @@ i.fa.fa-fw.field-icon.toggle-password.fa-eye-slash {
 * { margin: 0; padding: 0; }
 *, :before, :after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html { overflow-y: scroll; min-height: 100%; margin: 0 0 1px; font-size: 100.01%; -webkit-tap-highlight-color: rgba(0,0,0,0); -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling: touch; -ms-content-zooming: none; }
+html { overflow-x:hidden; overflow-y: scroll; min-height: 100%; margin: 0 0 1px; font-size: 100.01%; -webkit-tap-highlight-color: rgba(0,0,0,0); -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling: touch; -ms-content-zooming: none; }
 body { min-height: 100%; background: #ecf1f5; font-size: 62.5%; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body, textarea, input, select, option, button { color: #7f91a3; font-family: Lato, Arial, Helvetica, sans-serif; line-height: 1.38461538462; }

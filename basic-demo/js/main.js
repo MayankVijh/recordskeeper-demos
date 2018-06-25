@@ -37,7 +37,7 @@ $(document).ready(function(){
             else if(net == "TestNetwork"){
 
                  $('#top').css('background', '#54b2ce');
-                 $('#togglecontlabel').text('This demo is working on Test Network');
+                 $('#togglecontlabel').text('This demo is working on the Test Network');
                   $('.action-button').css('background', '#54b2ce');
                   
                   $(".action-button").hover(function() {
@@ -50,7 +50,7 @@ $(document).ready(function(){
                 net == "TestNetwork";
                 localStorage.setItem("network", "TestNetwork");
                  $('#top').css('background', '#54b2ce');
-                 $('#togglecontlabel').text('This demo is working on Test Network');
+                 $('#togglecontlabel').text('This demo is working on the Test Network');
                   $('.action-button').css('background', '#54b2ce');
                   
                   $(".action-button").hover(function() {

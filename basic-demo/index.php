@@ -37,9 +37,9 @@
             </p>
             <nav id="skip">
               <ul>
-                <li><a href="#nav" accesskey="n">Skip to navigation (n)</a></li>
-                <li><a href="#content" accesskey="c">Skip to content (c)</a></li>
-                <li><a href="#footer" accesskey="f">Skip to footer (f)</a></li>
+                <li><a href="#nav" accesskey="n">Skip to Navigation (n)</a></li>
+                <li><a href="#content" accesskey="c">Skip to Content (c)</a></li>
+                <li><a href="#footer" accesskey="f">Skip to Footer (f)</a></li>
               </ul>
             </nav>
             <nav id="nav">
@@ -50,7 +50,7 @@
                       <label class="tgl-btn" for="cb1"></label> -->
                 </div>
                 <span >
-                  <label id="togglecontlabel"> This demo is working on Test Network</label>
+                  <label id="togglecontlabel"> This demo is working on the Test Network</label>
                 </span>   
               
                </ul>
@@ -75,8 +75,8 @@
                     </ul>
                      <!-- fieldsets -->
                     <fieldset >
-                        <h2 class="fs-title">Secure your data by uploading it on Recordskeeper </h2>
-                            <h3 class="fs-subtitle">Let's learn How to upload your confidential  data on Recordskeeper        Blockchain in just few clicks.
+                        <h2 class="fs-title">Secure your data by uploading it on RecordsKeeper </h2>
+                            <h3 class="fs-subtitle">Let's learn how to upload your confidential data on RecordsKeeper     blockchain in just a few clicks.
                                 
                             </h3>
                             <div class="form leadform row">
@@ -102,13 +102,13 @@
                     <fieldset id="fieldset1">
                         <h2 class="fs-title">Get XRK Token</h2>
                             <p class="font15">
-                                If you don't have XRK wallet which you need to upload data on Recordskeeper Blockchain then you can 
+                                If you don't have an XRK wallet, which you need to upload data on the RecordsKeeper blockchain, then you can 
                                 create a new XRK Wallet by clicking here.
                             </p>
                             <input type="button" name = "newUser" class="action-button newUser" value="Generate XRK Wallet" id="createkeypair"  data-toggle="modal" data-target="#myModal"/>
                             <div class="topbot25">
                                 <p class="font15">
-                                   Or If you are already a registered user and already have a XRK wallet then you can simply
+                                   Or if you are already a registered user and already have a XRK wallet, then you can simply
                                     enter your address here and continue.
                                 </p>
 <!--                                <h3 class="fs-subtitle">Already Registered ? Enter your address</h3>-->
@@ -121,12 +121,13 @@
                     <fieldset>
                         <h2 class="fs-title">Record your Data </h2>
                         <h3 class="fs-subtitle">Secure Blockchain Network</h3>
-                        <p class="font15">
-                            Enter your data identifier which is associated with your data and it will be publically visible on blockchain.
+
+                        <p class="font15" id="data_id">
+                            Enter the data identifier which is associated with your data and it will be publically visible on the blockchain.
                         </p>
-                        <input type="text" name="idkey" placeholder="Enter Record Identifier key" id="idkey"/>
-                        <p class="font15">
-                            Enter your data, which may be in any format like JSON, digest, hexcode, text, e.t.c.
+                        <input type="text" name="idkey" placeholder="Enter Record Identifier Key" id="idkey"/>
+                        <p class="font15" id="key_id">
+                            Enter your data, which may be in any format such as JSON, digest, hexcode, text, etc.
                         </p>
                         <textarea placeholder="Enter your Data" rows="10" id="dataTextarea"></textarea>
                         
@@ -136,19 +137,19 @@
                     <fieldset>
                         <h2 class="fs-title">Review your Data</h2>
                         <p class="font15">
-                            Please Review your data carefully and click on authorize to submit the 
+                            Please review your data carefully and click on authorize to submit the 
                             data on blockchain.
                         </p>
                     
                         <div>
                             <div class="row errorContainer">
-                                <p>Your Record has been successfully published !!</p>
+                                <p>Your record has been successfully published!!</p>
                                 <div class="urldiv">
                                    <span class="transid" >Transaction ID: </span>
                                    <span class="transactionid"> # </span>
                                 </div>
                                  <div class="urldiv">
-                                   <span id="transurl">Transaction URL : </span>
+                                   <span id="transurl">Transaction URL: </span>
 <!--                                    <span class="mts"></span>-->
                                    <div><a class="transactionid transactionUrl" target="_blank"> </a></div>
                                 </div>
@@ -374,7 +375,7 @@
   
    <footer id="footer">
           <ul>
-          <li> &copy; 2016-2018 <span class="date">   Recordskeeper. All rights reserved </span></li>
+          <li> &copy; Recordskeeper  <span class="date">   @ 2016-2018. All rights reserved </span></li>
           <li><a href="./" target="_blank">Terms</a></li>
           <li><a href="./" target="_blank">Privacy Policy</a></li>
           <li><a href="http://explorer.recordskeeper.co/" target="_blank">Mainnet Explorer</a></li>
@@ -383,9 +384,10 @@
   
           <li><a href="http://stats.recordskeeper.co/" target="_blank">Blockchain Statistics</a></li>
           
-     <li><a href="http://miner.recordskeeper.co/" target="_blank">Miner Statistics</a></li>
-            <li><a href="http://airdrop.recordskeeper.co/" target="_blank">Airdrop</a></li>
-    <li><a href="http://docs.recordskeeper.co/" target="_blank">Docs</a></li>
+          <li><a href="http://miner.recordskeeper.co/" target="_blank">Miner Statistics</a></li>
+          <li><a href="http://airdrop.recordskeeper.co/" target="_blank">Airdrop</a></li>
+          <li><a href="http://demo.recordskeeper.co/" target="_blank">Demo</a></li>
+          <li><a href="http://docs.recordskeeper.co/" target="_blank">Docs</a></li>
     <!-- <li></li> -->
           </ul>
 </footer>   
