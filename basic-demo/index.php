@@ -350,7 +350,7 @@
       </div>
       <div class="modal-body standfont">
         <p class="themecolor"><i class="fas fa-dot-circle themecolor maright10"></i>Your wallet has been created.<br>
-          Please download your private key and save it at a safe place, you will need it for your trasactions.
+          Please download your private key and save it at a safe place, you will need it for your transactions.
           </p>
         <p id="modalshowaddress">
 
